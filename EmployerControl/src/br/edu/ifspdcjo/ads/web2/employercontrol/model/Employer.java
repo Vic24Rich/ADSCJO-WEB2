@@ -1,6 +1,6 @@
 package br.edu.ifspdcjo.ads.web2.employercontrol.model;
 
-public class Employer {
+public abstract class Employer {
 	
 	protected String name;
 	protected String cpf;
@@ -27,8 +27,6 @@ public class Employer {
 		this.cpf = cpf;
 	}
 	
-	public double calculateIncome() {
-		return 0;
-	}
+	public abstract double calculateIncome();
 
 }
